@@ -1,7 +1,7 @@
 # smallRNAanalysis
 
 
-# About our Scrips 
+# About our Scripts 
 
 Innate and exogenous dsRNAs have been reported to be targets for mammalian Dicer, and thus be cleaved into small-interfering RNAs (siRNAs). Here we proveded this script for siRNA analysis, and can be applied on viral siRNA (vsiRNAs), transfected dsRNAs, or exogenous dsRNAs. The script would analyze the patten of paired small RNAs and report several metrics that help users confirm the generation of siRNAs from desired templates.
 Our script has the following features:
