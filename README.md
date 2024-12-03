@@ -54,11 +54,11 @@ specie = pal
 In our study, we used ‘pal’ for ***P**teropus **a**lecto*, ‘mmu’ for ***M**us **mu**sculus*, and ‘hsa’ for ***H**omo **sa**piens*, the naming convention can be applied to other species.. 
 If the desired species are absent in the file, please use relatived species instaed.
 ```
-awk -v sp="$species" '/^>/{p=($0 ~ sp)} p' $ All_mature_file > ${species}.miRNA.fa
+awk -v sp="$specie" '/^>/{p=($0 ~ sp)} p' $ All_mature_file > ${specie}.miRNA.fa
 ```
 Now you can see the miRNA reference in the new generated file
 ```
-ls ${species}.miRNA.fa
+ls ${specie}.miRNA.fa
 # >pal-miR-1-5p
 # ACATACTTCTTTATGTACCCATA
 # >pal-miR-1-3p
@@ -76,7 +76,7 @@ ls ${species}.miRNA.fa
 - Activate the enviroment
 `conda activate exo`
 - Run the script
-`perl Autoanalysis.perl`
+`perl Autoanalysis.pl`
 - Wait for few minutes, you will see all of these reports:
 ```
 # Testdata.raw.fastq is the input fastq file
